@@ -1,0 +1,56 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    padding: 10px;
+  }
+  .header-gift {
+    color: rgb(248, 46, 46);
+  }
+}
+
+.category-filters {
+  .select {
+    height: 38px;
+    width: 110px;
+  }
+}
+
+.gender-filters {
+  .select {
+    display: flex;
+  }
+}
+
+.select {
+  > div {
+    cursor: pointer;
+    background: #cccccc;
+    border: 1px solid;
+    border-right: 0;
+    padding: 5px;
+    &:last-child {
+      border-right: 1px solid;
+    }
+    &.checked {
+      background: #777373;
+    }
+  }
+  input {
+    height: 20px;
+    width: 20px;
+    visibility: hidden;
+  }
+  label {
+    position: relative;
+    left: -12px;
+  }
+}
+
+.action-container {
+  button {
+    padding: 10px;
+    margin: 0 10px;
+  }
+}
